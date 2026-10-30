@@ -1,0 +1,169 @@
+{
+  "best_model": "LogisticGAM (tuned)",
+  "features": [
+    "individualCount",
+    "population_2020",
+    "rainfall",
+    "avg_rad",
+    "NDVI",
+    "elevation_m",
+    "temp_mean",
+    "wind_mean",
+    "humid_mean",
+    "shortwave_radiation",
+    "month",
+    "Total_Aerosol_Extinction",
+    "stateProvince",
+    "LandCover_Class"
+  ],
+  "num_log": [
+    "individualCount",
+    "population_2020",
+    "rainfall",
+    "avg_rad"
+  ],
+  "num_plain": [
+    "NDVI",
+    "elevation_m",
+    "temp_mean",
+    "wind_mean",
+    "humid_mean",
+    "shortwave_radiation",
+    "month",
+    "Total_Aerosol_Extinction"
+  ],
+  "cat": [
+    "stateProvince",
+    "LandCover_Class"
+  ],
+  "threshold": 0.16129550419171498,
+  "provinces": [
+    "Ampara",
+    "Anuradhapura",
+    "Badulla",
+    "Batticaloa",
+    "Colombo",
+    "Galle",
+    "Gampaha",
+    "Hambantota",
+    "Jaffna",
+    "Kalutara",
+    "Kandy",
+    "Kegalla",
+    "Kilinochchi",
+    "Kurunegala",
+    "Mannar",
+    "Matale",
+    "Matara",
+    "Monaragala",
+    "Mullaittivu",
+    "Nuwara",
+    "Polonnaruwa",
+    "Puttalam",
+    "Ratnapura",
+    "Trincomalee",
+    "Vavuniya"
+  ],
+  "landcover": [
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "16",
+    "17",
+    "2",
+    "7",
+    "8",
+    "9"
+  ],
+  "stats": {
+    "individualCount": {
+      "median": 2.0,
+      "p01": 1.0,
+      "p99": 60.0
+    },
+    "population_2020": {
+      "median": 4.927582,
+      "p01": 1.052675,
+      "p99": 27.765616
+    },
+    "rainfall": {
+      "median": 2.43,
+      "p01": 0.0,
+      "p99": 38.18779999999984
+    },
+    "avg_rad": {
+      "median": 1.1100000143051147,
+      "p01": 0.05897768221795554,
+      "p99": 29.68000030517578
+    },
+    "NDVI": {
+      "median": 0.6917,
+      "p01": 0.1543,
+      "p99": 0.9069
+    },
+    "elevation_m": {
+      "median": 20.0,
+      "p01": 0.0,
+      "p99": 1997.0
+    },
+    "temp_mean": {
+      "median": 26.35,
+      "p01": 20.8,
+      "p99": 29.58419999999998
+    },
+    "wind_mean": {
+      "median": 2.82,
+      "p01": 0.7,
+      "p99": 6.66
+    },
+    "humid_mean": {
+      "median": 84.5,
+      "p01": 67.71,
+      "p99": 93.56
+    },
+    "shortwave_radiation": {
+      "median": 20.2,
+      "p01": 6.79,
+      "p99": 26.07
+    },
+    "month": {
+      "median": 6.0,
+      "p01": 1.0,
+      "p99": 12.0
+    },
+    "Total_Aerosol_Extinction": {
+      "median": 0.1830536872148513,
+      "p01": 0.0906115770339965,
+      "p99": 0.3416574895381927
+    }
+  },
+  "best_params": {
+    "n_splines": 7,
+    "lam": 0.2871018640743446
+  },
+  "metrics": {
+    "PR_AUC": 0.3015910481562043,
+    "ROC_AUC": 0.8526053525863981,
+    "F1": 0.40631308496971924,
+    "Precision": 0.28626842513576417,
+    "Recall": 0.6997471554993678
+  },
+  "term_importance": {
+    "stateProvince": 0.6469,
+    "LandCover_Class": 0.3068,
+    "elevation_m": 0.2947,
+    "avg_rad": 0.2423,
+    "individualCount": 0.1847,
+    "month": 0.1491,
+    "population_2020": 0.0977,
+    "NDVI": 0.0665,
+    "temp_mean": 0.0514,
+    "shortwave_radiation": 0.0401,
+    "wind_mean": 0.026,
+    "rainfall": 0.0256,
+    "Total_Aerosol_Extinction": 0.0159,
+    "humid_mean": 0.0053
+  }
+}
